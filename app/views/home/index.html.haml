@@ -1,0 +1,23 @@
+- if flash[:notice]
+	.alert.alert-info
+		= flash[:notice]
+
+%h1.logo-brand UnderJobs.Me
+
+.marketing-section
+	%p.lead
+		%strong Cost effectively
+		advertise your site.
+
+	%p.lead
+		%strong Get users
+		by swapping clicks with other websites.  Simply show ads for other websites to earn credits for your advertising compaigns.
+
+	%p.lead
+		We are a
+		%strong click for click
+		exchange, so for every user that clicks on the ads you show, we guarentee a click for your ad.  There is
+		%strong no limit
+		to the number of impressions it takes.
+
+= render "email_form"
