@@ -14,15 +14,31 @@
 */
 
 @import "bootstrap";
-body { padding: 60px 0; }
+body{padding-top: 50px;}
 @import "bootstrap-responsive";
 
 select{
 	height: 41px;
 }
 
-.lead{
-  margin-top: 20px;
+html, body{
+  background-color: #333;
+}
+
+.light{
+  background-color: #fff;
+  color: #111;
+}
+
+.dark{
+  background-color: #333;
+  color: #fff;
+}
+
+#headline{
+  font-size: 28px;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .btn-submit{
@@ -32,8 +48,13 @@ select{
 
 
 .container-narrow{
+  position: relative;
+  z-index: 100;
+  background-color: #fff;
+  padding: 40px 30px;
 	max-width: 650px;
 	margin: 0 auto;
+  border-radius: 15px;
 }
 
 .logo-brand{
@@ -41,9 +62,27 @@ select{
 }
 
 .marketing-section{
-	margin-top: 80px;
+	margin-top: 65px;
 }
 
 .apply{
 	margin-top: 25px;
+}
+
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+#bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
 }
