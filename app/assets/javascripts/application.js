@@ -14,3 +14,11 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+$(document).ready(function(){
+
+  $("#ad-link").click(function(){
+    var c = $("#ad-credits");
+    c.text(parseInt(c.text()) + 1);
+  });
+});

@@ -1,0 +1,30 @@
+.ad-container{
+  background-color: #eee;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  border-radius: 7px;
+  padding: 10px 10px;
+  color: #34495e;
+}
+
+.ad-thumb{
+  height: 80px;
+  border-radius: 7px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.ad-headline{
+  &:hover{
+    text-decoration: underline;
+  }
+  font-size: 1.7em;
+  margin-bottom: 4px;
+}
+
+.ad-credits-container{
+  font-size: 1.3em;
+  margin-top: 20px;
+}
+
+.ad-credits{
+}

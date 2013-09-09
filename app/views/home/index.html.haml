@@ -4,11 +4,33 @@
 
 %h1.logo-brand ClickSwapper
 
+%p.text-center.ad-credits-container
+	Ad Credits:
+	%span#ad-credits 0
+
+%a#ad-link{href: "#"}
+	.row-fluid
+		.ad-container.span6.offset3
+			.row-fluid
+				.span4
+					= image_tag "shirt.jpg", class: "ad-thumb"
+				.span8
+					%p.ad-headline
+						JJ's Shirts
+					%p.ad-promo
+						High quality shirts at a resonable price!
+
+%p.muted.text-center Click the ad to get credits for your campaign.
+
 .marketing-section
 	%p#headline.lead
 		%strong Cost effectively
 		advertise your site.
 
+.text-center
+	= render "email_form"
+
+.marketing-section
 	%p.lead
 		%strong Get users
 		by swapping clicks with other websites.  Simply show ads for other websites to earn credits for your advertising compaigns.
@@ -20,4 +42,13 @@
 		%strong no limit
 		to the number of impressions it takes.
 
-= render "email_form"
+	%p.lead
+		%strong You
+		can pick the ads your site will show.  We give you the power to choose which ads you want.  This allows you to only pick ads that
+		%strong complement
+		your product, not compete with it.
+
+
+
+.marketing-section.text-center
+	= render "email_form"

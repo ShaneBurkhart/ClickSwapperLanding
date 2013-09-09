@@ -1,5 +1,7 @@
-.marketing-section.text-center
-	= simple_form_for @user, html: {class: "form-horizontal"} do |f|
-		= f.input_field :email, placeholder: "Your Email", class: "span3"
-		= f.button :submit, class: "btn-success btn-large btn-submit", value: "Reserve Your Spot"
-	%span.muted Over 100 users already have!
+= simple_form_for @user, html: {class: "form-horizontal"} do |f|
+  = f.input_field :email, placeholder: "Your Email", class: "span3"
+  = f.button :submit, class: "btn-success btn-large btn-submit", value: "Reserve Your Spot"
+%span.muted Over 100 users already have!
+%br
+%span.muted
+  Your privacy is important!  We won't give your email to anyone.
