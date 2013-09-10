@@ -17,7 +17,16 @@
 
 $(document).ready(function(){
 
-  $("#ad-link").click(function(){
+  var max = function(i, j){
+    return i > j ? i : j;
+  }
+
+  $("#your-ad").click(function(){
+    var c = $("#ad-credits");
+    c.text(max(parseInt(c.text()) - 1, 0));
+  });
+
+  $("#other-ad").click(function(){
     var c = $("#ad-credits");
     c.text(parseInt(c.text()) + 1);
   });

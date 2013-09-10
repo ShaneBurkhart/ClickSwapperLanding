@@ -5,22 +5,40 @@
 %h1.logo-brand ClickSwapper
 
 %p.text-center.ad-credits-container
-	Ad Credits:
+	Your Ad Credits:
 	%span#ad-credits 0
 
-%a#ad-link{href: "#"}
-	.row-fluid
-		.ad-container.span6.offset3
-			.row-fluid
-				.span4
-					= image_tag "shirt.jpg", class: "ad-thumb"
-				.span8
-					%p.ad-headline
-						JJ's Shirts
-					%p.ad-promo
-						High quality shirts at a resonable price!
+.row-fluid
+	.span6
+		%p.text-center
+			%strong Your Ad
+		%a#your-ad{href: "#"}
+			.ad-container
+				.row-fluid
+					.span4
+						= image_tag "shirt.jpg", class: "ad-thumb"
+					.span8
+						%p.ad-headline
+							JJ's Shirts
+						%p.ad-promo
+							High quality shirts at a resonable price!
+		%p.muted.text-center Clicks on your ads use credit.
+	.span6
+		%p.text-center
+			%strong Ad Shown On Your Site
+		%a#other-ad{href: "#"}
+			.ad-container
+				.row-fluid
+					.span4
+						= image_tag "shoe.jpg", class: "ad-thumb"
+					.span8
+						%p.ad-headline
+							MJ's Shoes
+						%p.ad-promo
+							Sick kicks for cheap!
+		%p.muted.text-center Clicks on ads you show earn credit.
 
-%p.muted.text-center Click the ad to get credits for your campaign.
+
 
 .marketing-section
 	%p#headline.lead
